@@ -32,28 +32,31 @@
     </h2>
     <div>
       <form action="/action_page.php">
-        <div class="divLocation"><i class="fa fa-location-dot location"  ></i></div>
+        <div class="divLocation"><i class="fa fa-location-dot locationIcon"  ></i></div>
         <input class="searchField" type="text" id="fname" name="fname" ><br><br>
         <input class="searchButton" type="submit" value="Rechercher">
         <div class="divPhoneButton"><i class="fa-solid fa-magnifying-glass phoneSearchIcon"  ></i></div>
         
       </form>
     </div>
-    <h2>
+    <div class="divTitleFilter">
+    <h2 class="titleFilter">
       Filtres
     </h2>
-    <div>
-      <ul>
-        <li><div class="divECO"> <i class="fa-solid fa-money-bill-wave"></i> </div>Economique </li>
-        <li><div class="divFAM"> <i class="fa-solid fa-person"></i> </div>Familial </li>
-        <li><div class="divROM"> <i class="fa-solid fa-heart"></i> </div>Romantique </li>
-        <li><div class="divANI"> <i class="fa-solid fa-dog"></i> </div>Animaux autorisés </li>
-      </ul>
-    </div>
-    <div class="divNote">
-      <div class="divI"> <i class="fa fa-location-dot eco" ></i> </div>Plus de 500 logements sont disponibles dans cette ville
+    <div class="divFilter">
+        <div class="divBlockIcoText"><div class="divECO"> <i class="fa-solid fa-money-bill-wave economicIcon"></i> </div><div class="divTextEco">Economique</div><div class="divEmptyCircle"></div></div>
+        <div class="divBlockIcoText"><div class="divFAM"> <i class="fa-solid fa-person famillyIcon"></i> </div><div class="divTextEco">Familial</div><div class="divEmptyCircle"></div></div>
+        <div class="divBlockIcoText"><div class="divROM"> <i class="fa-solid fa-heart romanticIcon"></i> </div><div class="divTextEco">Romantique</div><div class="divEmptyCircle"></div></div>
+        <div class="divBlockIcoText"><div class="divANI"> <i class="fa-solid fa-dog petsIcon"></i> </div><div class="divTextEco">Animaux autorisés</div><div class="divEmptyCircle"></div></div>
     </div>
     
+    
+    </div>
+
+    <div class="divNote">
+      <div class="divI"> <i class="fa-solid fa-info infoIcon"></i> </div>Plus de 500 logements sont disponibles dans cette ville
+    </div>
+
     <main>
 
 
