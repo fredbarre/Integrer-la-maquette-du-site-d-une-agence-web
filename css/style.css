@@ -9,10 +9,16 @@
    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
 
+/*font*/
 
-header {
-    font-family: 'Raleway', sans-serif;
+*{
+   font-family: 'Raleway', sans-serif;
 }
+h1, .searchField, .searchButton{
+   font-weight: bold;
+}
+
+/*fin font*/
 
 header nav{
    display: flex;
@@ -27,7 +33,6 @@ nav ul{
 
 nav li{
    padding: 52px;
-  /* margin: 0 35px 0px 2px;*/
 }
 nav li:hover{
    color: #0065fcff;
@@ -46,33 +51,21 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 @media screen and (max-width: 768px) {
    nav {
-      flex-flow: column nowrap; /* The width is 100%, when the viewport is 800px or smaller */
+      flex-flow: column nowrap; 
    }
  }
 
  @media screen and (min-width: 768px) and (max-width: 992px) {
    nav img, nav li{
-     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+     width: 100%; 
    }
  }
 
-h1{
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
- }
-h2{
-   font-family: 'Raleway', sans-serif;
-   
- }
 form{
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   /*background-color: #F2F2F2;
-   border-radius: 25px;
-   padding: 20px;
-   width: 200px;*/
-   /*height: 150px;*/
+   
 }
 
 .searchField{
@@ -80,14 +73,10 @@ form{
    border-color: #F2F2F2;
    height: 48px;
    width: 230px;
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
+   
 }
 
-.phoneButton{
-   display: none;
-}
-.divPhoneButton{
+.phoneButton, .divPhoneButton{
    display: none;
 }
 
@@ -96,23 +85,13 @@ form{
    border-radius: 0px 15px 15px 0px;
    height: 50px;
    width: 130px;
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
-   /*font-size: 50px;*/
    color: white;
 
 }
 
-#location{
+.location{
    
-   /*background-color: red;*/
-   /*border-radius: 15px 0px 0px 15px;
-   height: 50px;
-   width: 50px;*/
-   /**height: 100%;
-   width: 100%;*/
    align-items: center;
-  
    font-size: 150%;
    align-items: center;
    position: relative;
@@ -132,15 +111,11 @@ form{
       display: none; /* The width is 100%, when the viewport is 800px or smaller */
    }
 
-   .phoneButton {
+   .phoneButton, .divPhoneButton{
       display: flex;
    }
 
-   .divPhoneButton{
-      display: flex;
-   }
-
-   #phoneSearchIcon{
+   .phoneSearchIcon{
       align-items: center;
      
       font-size: 150%;
@@ -157,4 +132,10 @@ form{
       width: 50px;
     }
  }
+/*filtres*/
+
+ ul{
+   display: flex;
+   list-style: none;
+}
 
