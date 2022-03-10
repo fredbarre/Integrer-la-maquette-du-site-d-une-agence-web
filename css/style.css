@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*Snippet pour les préfixes de box-sizing*/
+
+.box {
+   box-sizing: border-box; /* Opera/IE 8+ */
+   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+
+header {
+    font-family: 'Raleway', sans-serif;
+}
+
+header nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav ul{
+   display: flex;
+   list-style: none;
+}
+
+nav li{
+   padding: 52px;
+  /* margin: 0 35px 0px 2px;*/
+}
+nav li:hover{
+   color: #0065fcff;
+   border-top-style: solid;
+   padding-top: 47px;
+
+   
+}
+
+nav img{
+   margin-left: 70px;
+}
+
+/*992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+tout ce qui est en dessous de 768 pour les téléphones portables*/
+
+@media screen and (max-width: 768px) {
+   nav {
+      flex-flow: column nowrap; /* The width is 100%, when the viewport is 800px or smaller */
+   }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+   nav img, nav li{
+     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+   }
+ }
+
+h1{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+ }
+h2{
+   font-family: 'Raleway', sans-serif;
+   
+ }
+form{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   /*background-color: #F2F2F2;
+   border-radius: 25px;
+   padding: 20px;
+   width: 200px;*/
+   /*height: 150px;*/
+}
+
+.searchField{
+   border: 1px solid;
+   border-color: #F2F2F2;
+   height: 48px;
+   width: 230px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+}
+
+.phoneButton{
+   display: none;
+}
+.divPhoneButton{
+   display: none;
+}
+
+.searchButton{
+   background-color: #0065FC;
+   border-radius: 0px 15px 15px 0px;
+   height: 50px;
+   width: 130px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   /*font-size: 50px;*/
+   color: white;
+
+}
+
+#location{
+   
+   /*background-color: red;*/
+   /*border-radius: 15px 0px 0px 15px;
+   height: 50px;
+   width: 50px;*/
+   /**height: 100%;
+   width: 100%;*/
+   align-items: center;
+  
+   font-size: 150%;
+   align-items: center;
+   position: relative;
+   top: 15px;
+   left: 15px;
+}
+
+.divLocation {
+   background-color: #F2F2F2;
+   border-radius: 15px 0px 0px 15px;
+   height: 50px;
+   width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+   .searchButton {
+      display: none; /* The width is 100%, when the viewport is 800px or smaller */
+   }
+
+   .phoneButton {
+      display: flex;
+   }
+
+   .divPhoneButton{
+      display: flex;
+   }
+
+   #phoneSearchIcon{
+      align-items: center;
+     
+      font-size: 150%;
+      align-items: center;
+      position: relative;
+      top: 15px;
+      left: 15px;
+    }
+   
+    .divPhoneButton{
+      background-color: #F2F2F2;
+      border-radius: 0px 15px 15px 0px;
+      height: 50px;
+      width: 50px;
+    }
+ }
+
