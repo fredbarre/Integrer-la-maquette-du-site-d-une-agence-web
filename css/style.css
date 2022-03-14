@@ -118,16 +118,17 @@ form{
    .phoneSearchIcon{
       align-items: center;
      
-      font-size: 150%;
+      font-size: 125%;
       align-items: center;
       position: relative;
       top: 15px;
       left: 15px;
+      color: white;
     }
    
     .divPhoneButton{
-      background-color: #F2F2F2;
-      border-radius: 0px 15px 15px 0px;
+      background-color: #0065FC;
+      border-radius: 15px 15px 15px 15px;
       height: 50px;
       width: 50px;
     }
@@ -138,6 +139,7 @@ form{
    display: flex; 
    justify-content: flex-start;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .divECO, .divFAM, .divROM, .divANI{
@@ -149,6 +151,7 @@ form{
    color: #0065FC;
    position: relative;
    right: 20px;
+   
 }
 
 .economicIcon, .famillyIcon, .romanticIcon, .petsIcon{
@@ -182,6 +185,7 @@ form{
    border-color: #DEEBFF;
    margin-left: 20px;
    margin-right: 50px;
+   
 }
 
 .divEmptyCircle{
@@ -201,6 +205,7 @@ form{
 .divTitleFilter{
    display: flex; 
    justify-content: flex-start;
+   flex-wrap: wrap;
 }
 
 .titleFilter{
@@ -229,8 +234,162 @@ form{
 .infoIcon{
    align-items: center;
    /*font-size: 150%;*/
-   align-items: center;
+   
    position: relative;
    top: 3px;
    left: 10px;
+}
+
+.imgAccoMar{
+   max-width: 240px;
+   /*max-height: 120px;*/
+   /*width: 240px;*/
+   height: 120px;
+   border-radius: 15px 15px 0px 0px;
+   margin-left: 5px;
+   margin-top: 5px;
+}
+
+.divAccoMar{
+   width: 879px;
+   height: 622px;
+   background-color: #F2F2F2;
+   border-radius: 15px 15px 15px 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   
+}
+
+.divBlockImgAccoMar{
+   width: 250px;
+   height: 200px;
+   background-color: white;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border-radius: 15px 15px 15px 15px;
+   margin-left: 30px;
+   margin-bottom: 30px;
+}
+
+.divNameAccoMar{
+   font-weight: bold;
+   margin-left: 15px;
+}
+
+.divPriceAccoMar , .stars{
+   margin-left: 15px;
+}
+
+.iconBlueStar{
+   color: #0065FC;
+}
+
+.iconEmptyStar{
+   color: #F2F2F2;
+}
+
+.divBlockAllAcco{
+   display: flex; 
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   
+}
+/*
+.divImgAcco{
+   position: relative;
+   width: 238px;
+   height: 110px;
+   overflow: hidden;
+}*/
+
+.divTextMar{
+   font-weight: bold;
+   margin-top: 35px;
+   margin-left: 35px;
+   font-size: 22px;
+
+}
+
+.divTextMore{
+   
+   margin-bottom: 35px;
+   margin-left: 35px;
+   font-weight: bold;
+}
+
+.divBlockImgNameStarsPop{
+   display: flex; 
+   justify-content: flex-start;
+   border-radius: 15px 15px 15px 15px;
+   background-color: white;
+   width: 350px;
+   height: 140px;
+   /**margin-bottom: 30px;*/
+   margin-left: 35px;
+   margin-top: 30px;
+
+}
+
+.imgPop{
+   width: 129px;
+   height: 130px;
+   border-radius: 15px 0px 0px 15px;
+   margin-left: 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+
+}
+
+.divPop{
+   background-color: #F2F2F2;
+   width: 420px;
+   height: 620px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   border-radius: 15px 15px 15px 15px;
+   margin-left: 30px;
+   
+}
+
+.divBlockNameStarsPop{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.divNamePop, .divPricePop{
+   margin-top: 15px;
+   margin-left: 15px;
+}
+
+.divNamePop{
+   font-weight: bold;
+   margin-right: 20px;
+}
+
+.starsPop{
+   
+   margin-left: 15px;
+   /*margin-bottom: 15px;*/
+   margin-top: 30px;
+   
+   
+}
+
+.divTextPop{
+   margin-top: 30px;
+   margin-left: 35px;
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.divBlockMarPop{
+   display: flex; 
+   justify-content: flex-start;
+   flex-wrap: wrap;
 }
