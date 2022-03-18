@@ -14,35 +14,66 @@
 *{
    font-family: 'Raleway', sans-serif;
 }
+
+.phoneButton, .divPhoneButton, .divAccoMarPhone, .divBlockActMarPhone, .liAccoPhone, .liActPhone{
+   display: none;
+}
+
+
 h1, .searchField, .searchButton{
    font-weight: bold;
 }
 
 /*fin font*/
-
+/*
 header nav{
    display: flex;
    justify-content: space-between;
    align-items: center;
+}*/
+.navBlockBookiAccoAct{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
-
+/*
 nav ul{
    display: flex;
    list-style: none;
-}
+}*/
 
+.ulAccoAct{
+   display: flex;
+   list-style: none;
+}
+/*
 nav li{
    padding: 52px;
+}*/
+
+.liAcco, .liAct, .liAccoPhone, .liActPhone{
+   padding: 52px;
 }
+
+.liAcco:hover, .liAct:hover, .liActPhone:hover, .liAccoPhone:hover{
+   color: #0065fcff;
+   border-top-style: solid;
+   padding-top: 47px;
+
+}/*
 nav li:hover{
    color: #0065fcff;
    border-top-style: solid;
    padding-top: 47px;
 
    
-}
-
+}*/
+/*
 nav img{
+   margin-left: 70px;
+}*/
+
+.imgBooki{
    margin-left: 70px;
 }
 
@@ -50,22 +81,34 @@ nav img{
 tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 @media screen and (max-width: 768px) {
-   nav {
+   /*nav {
       flex-flow: column nowrap; 
+   }*/
+   .navBlockBookiAccoAct{
+      flex-flow: column nowrap;
    }
  }
-
- @media screen and (min-width: 768px) and (max-width: 992px) {
-   nav img, nav li{
+/*
+ @media screen and (min-width: 768px) and (max-width: 992px) {*/
+   /*nav img, nav li{
      width: 100%; 
+   }*//*
+   .imgBooki,.liAcco,.liAct{
+      width: 100%;
    }
- }
-
+ }*/
+/*
 form{
    display: flex;
    justify-content: flex-start;
    align-items: center;
    
+}*/
+
+.formSearch{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
 }
 
 .searchField{
@@ -76,9 +119,6 @@ form{
    
 }
 
-.phoneButton, .divPhoneButton, .divAccoMarPhone{
-   display: none;
-}
 
 .searchButton{
    background-color: #0065FC;
@@ -210,6 +250,8 @@ form{
    display: flex; 
    justify-content: flex-start;
    flex-wrap: wrap;
+   margin-left: 20px;
+   margin-top: 20px;
 }
 
 .titleFilter{
@@ -220,6 +262,8 @@ form{
    display: flex; 
    justify-content: flex-start;
    align-items: center;
+   margin-left: 20px;
+   margin-top: 20px;
 }
 
 .divI{
@@ -245,7 +289,7 @@ form{
 }
 
 .imgAccoMar{
-   max-width: 240px;
+   width: 240px;
    /*max-height: 120px;*/
    /*width: 240px;*/
    height: 120px;
@@ -278,6 +322,8 @@ form{
    border-radius: 15px 15px 15px 15px;
    margin-left: 30px;
    margin-bottom: 30px;
+
+   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
 .divNameAccoMar{
@@ -340,6 +386,8 @@ form{
    margin-left: 35px;
    margin-top: 30px;
 
+   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+
 }
 
 .imgPop{
@@ -400,10 +448,20 @@ form{
 
 .divBlockMarPop{
    display: flex; 
-   /*justify-content: flex-start;*/
-   justify-content: center;
+   justify-content: flex-start;
+   /*justify-content: center;*/
    flex-wrap: wrap;
+   margin-left: 20px;
 }
+
+@media screen and (max-width: 1366px) {  
+   .divBlockMarPop{
+      display: flex; 
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+}
+
 
 .divBlockAllAccoPhone{
    display: flex; 
@@ -422,11 +480,20 @@ form{
    border-radius: 15px 15px 15px 15px;
    margin-left: 30px;
    margin-bottom: 30px;
+
+   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
 
 /*@media screen and (max-width: 768px) {*/
 @media screen and (max-width: 879px) {   
+   .liAcco{
+      display: none;
+   }
+   .liAccoPhone{
+      display:flex;
+   }
+   
    .divAccoMar{
       display: none;
    }
@@ -484,6 +551,8 @@ form{
    border-width: 1px;
    border-color: white;/*test*/
    border-radius: 15px 15px 15px 15px;
+
+   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
 
@@ -535,10 +604,97 @@ form{
 .divTextFooter{
    margin-bottom: 15px;
 }
+/*
+.divBlockActMar{
+   display: flex; 
+   justify-content: flex-start;
+   flex-direction: column;
+   
+}*/
 
 @media screen and (max-width: 768px){
    .divFooterAbout, .divFooterAcco, .divFooterAssist{
       margin-left: 30px;
    }
 
+   .divBlockActMar{
+      display: none;
+   }
+   .divBlockActMarPhone{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      
+   }
+
+   .liAct{
+      display: none;
+   }
+
+   .liActPhone{
+      display:flex;
+   }
+
+   .liActPhone:hover, .liAccoPhone:hover{
+      color: #0065fcff;
+      border-top-style: none;
+      border-bottom-style: solid;
+      padding-top: 47px;
+   
+   }
+}
+
+.imgActPhone{
+   height: 135px;
+   width: 336px;
+   border-radius: 15px 15px 0px 0px;
+}
+
+.divVieuxPortPhone, .divFortPhone, .divIlesPhone, .divParcNaPhone, .divDamePhone, .divLongchampPhone{
+   height: 190px;
+   border-radius: 15px 15px 15px 15px;
+   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+   margin-top: 20px;
+   
+}
+.divLongchampPhone{
+   margin-bottom: 50px;
+}
+
+.divTextActPhone{
+   margin-top: 15px;
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.divActivitesMarseillePhone{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+a:link, a:visited{
+   color: black;
+   background-color: transparent;
+   text-decoration: none;
+}
+ 
+.divBlockSearch{
+   margin-left: 20px;
+}
+
+.divTextAccoDream, .divTextTownNat{
+   margin-left: 20px;
+   margin-bottom: 15px;
+}
+
+.divTextAccoDream{
+   font-weight: bold;
+   font-size: 150%;
+}
+
+.divBlockActMar{
+   margin-bottom: 50px;
 }

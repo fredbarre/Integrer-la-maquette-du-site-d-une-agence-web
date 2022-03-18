@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
  
   <head>
       
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Titre de la page</title>
+    <title>Booki</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     
@@ -15,23 +15,25 @@
  
   <body>
     <header>
-      <nav>
-        <img src="./images/logo/Booki.png" alt="Logo" />
-        <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
+      <nav class="navBlockBookiAccoAct">
+        <img src="./images/logo/Booki.png" alt="Logo" class="imgBooki"/>
+        <ul class="ulAccoAct">
+          <a href="#idTextMar"><li class="liAcco">Hébergements</li></a>
+          <a href="#idTextMarPhone"><li class="liAccoPhone">Hébergements</li></a>
+          <a href="#idTextAct"><li class="liAct">Activités</li></a>
+          <a href="#idTextActPhone"><li class="liActPhone">Activités</li></a>
         </ul>
       </nav>
     </header>
 
-    <h1>
+    <div class="divTextAccoDream">
       Trouver votre hebergement pour des vacances de rêve
-    </h1>
-    <h2>
+    </div>
+    <div class="divTextTownNat">
       En plein centre ville ou en pleine nature
-    </h2>
-    <div>
-      <form action="/action_page.php">
+    </div>
+    <div class="divBlockSearch">
+      <form action="#" class="formSearch">
         <div class="divLocation"><i class="fa fa-location-dot locationIcon"  ></i></div>
         <input class="searchField" type="text" id="fname" name="fname" ><br><br>
         <input class="searchButton" type="submit" value="Rechercher">
@@ -58,58 +60,71 @@
       <div class="divBlockMarPop">
 
         <div class="divAccoMar">
-          <div class="divTextMar">Hébergements à Marseille</div>
+          <div class="divTextMar" id="idTextMar">Hébergements à Marseille</div>
 
           <div class="divBlockAllAcco">
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Auberge La Cannebière</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Auberge La Cannebière</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 25€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
             </div>
 
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Hôtel du port</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Hôtel du port</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 52€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i></div>
             </div>
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Hôtel Les mouettes</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Hôtel Les mouettes</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 76€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
             </div>
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Hôtel de la mer</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash2.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Hôtel de la mer</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 46€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
             </div>
 
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Auberge Le Panier</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Auberge Le Panier</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 23€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
             </div>
 
             <div class="divBlockImgAccoMar">
-              <img src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash2.jpg" alt="Logo" class="imgAccoMar" />
-              <div class="divNameAccoMar">Hôtel chez Amina</div>
+              <a href="#">
+                <img src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash2.jpg" alt="Logo" class="imgAccoMar" />
+                <div class="divNameAccoMar">Hôtel chez Amina</div>
+              </a>
               <div class="divPriceAccoMar">Nuit à partir de 96€</div>
               <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i></div>
             </div>
 
 
           </div>
-
-          <div class="divTextMore">Afficher plus</div>
+          <a href="#">
+            <div class="divTextMore">Afficher plus</div>
+          </a>
 
         </div>
     
@@ -119,27 +134,39 @@
           <div class="divIPop"> <i class="fa-solid fa-chart-line-up"></i> </div>
 
           <div class="divBlockImgNameStarsPop">
-            <img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash2.jpg" alt="Logo" class="imgPop" />
+            <a href="#">
+              <img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash2.jpg" alt="Logo" class="imgPop" />
+            </a>
             <div class="divBlockNameStarsPop">
-              <div class="divNamePop">Hôtel Le soleil du matin</div>
+              <a href="#">
+                <div class="divNamePop">Hôtel Le soleil du matin</div>
+              </a>
               <div class="divPricePop">Nuit à partir de 128€</div>
               <div class="starsPop"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i> </div>
             </div>
           </div>
       
           <div class="divBlockImgNameStarsPop">
-            <img src="./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash2.jpg" alt="Logo" class="imgPop" />
+            <a href="#">
+              <img src="./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash2.jpg" alt="Logo" class="imgPop" />
+            </a>
             <div class="divBlockNameStarsPop">
-              <div class="divNamePop">Au coeur de l'eau Chambres d'hôtes</div>
+              <a href="#">
+                <div class="divNamePop">Au coeur de l'eau Chambres d'hôtes</div>
+              </a>
               <div class="divPricePop">Nuit à partir de 71€</div>
               <div class="starsPop"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i> </div>
             </div>
           </div>
 
           <div class="divBlockImgNameStarsPop">
-            <img src="./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash2.jpg" alt="Logo" class="imgPop" />
+            <a href="#">
+              <img src="./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash2.jpg" alt="Logo" class="imgPop" />
+            </a>
             <div class="divBlockNameStarsPop">
-              <div class="divNamePop">Hôtel Tout bleu et Blanc</div>
+              <a href="#">
+                <div class="divNamePop">Hôtel Tout bleu et Blanc</div>
+              </a>
               <div class="divPricePop">Nuit à partir de 68€</div>
               <div class="starsPop"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i> </div>
             </div>
@@ -152,95 +179,169 @@
 
 
       <div class="divAccoMarPhone">
-        <div class="divTextMar">Hébergements à Marseille</div>
+        <div class="divTextMar" id="idTextMarPhone">Hébergements à Marseille</div>
 
         <div class="divBlockAllAccoPhone">
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Auberge La Cannebière</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash3.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Auberge La Cannebière</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 25€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
           </div>
 
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Hôtel du port</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash3.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Hôtel du port</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 52€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i></div>
           </div>
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Hôtel Les mouettes</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash3.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Hôtel Les mouettes</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 76€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
           </div>
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Hôtel de la mer</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash2.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Hôtel de la mer</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 46€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
           </div>
 
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Auberge Le Panier</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Auberge Le Panier</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 23€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconEmptyStar"></i></div>
           </div>
 
           <div class="divBlockImgAccoMarPhone">
-            <img src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash2.jpg" alt="Logo" class="imgAccoMarPhone" />
-            <div class="divNameAccoMar">Hôtel chez Amina</div>
+            <a href="#">
+              <img src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash2.jpg" alt="Logo" class="imgAccoMarPhone" />
+              <div class="divNameAccoMar">Hôtel chez Amina</div>
+            </a>
             <div class="divPriceAccoMar">Nuit à partir de 96€</div>
             <div class="stars"> <i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i><i class="fa-solid fa-star iconBlueStar"></i></div>
           </div>
 
 
         </div>
-
-        <div class="divTextMore">Afficher plus</div>
-
+        <a href="#">
+          <div class="divTextMore">Afficher plus</div>
+        </a>
       </div>
 
 
       <div class="divBlockActMar">
-        <div class="divTextActMar">Activités à Marseille</div>
+        <div class="divTextActMar" id="idTextAct">Activités à Marseille</div>
     
         <div class="divActivitesMarseille">
           <div class="divVieuxPort">
-            <img src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Logo" class="imgActLarge" />
-            <div class="divTextAct">Vieux Port</div>
+            <a href="#">
+              <img src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash2.jpg" alt="Logo" class="imgActLarge" />
+              <div class="divTextAct">Vieux Port</div>
+            </a>
           </div>
           <div class="divBlockFortIles">
             <div class="divFort">
-              <img src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Logo" class="imgActSmall"  />
-              <div class="divTextAct">Fort de Pomègues</div>
+              <a href="#">
+                <img src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash2.jpg" alt="Logo" class="imgActSmall"  />
+                <div class="divTextAct">Fort de Pomègues</div>
+              </a>
             </div>
             <div class="divIles">
-              <img src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Logo" class="imgActSmall" />
-              <div class="divTextAct">Îles du Frioul</div>
+              <a href="#">
+                <img src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash2.jpg" alt="Logo" class="imgActSmall" />
+                <div class="divTextAct">Îles du Frioul</div>
+              </a>
             </div>
           </div>
       
           <div class="divParcNa">
-            <img src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Logo" class="imgActLarge" />
-            <div class="divTextAct">Parc National des Calanques</div>
+            <a href="#">
+              <img src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash2.jpg" alt="Logo" class="imgActLarge" />
+              <div class="divTextAct">Parc National des Calanques</div>
+            </a>
           </div>
           <div class="divBlockDameLongchamp">
             <div class="divDame">
-              <img src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Logo" class="imgActSmall" />
-              <div class="divTextAct">Notre-Dame-de-la-Garde</div>
+              <a href="#">
+                <img src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Logo" class="imgActSmall" />
+                <div class="divTextAct">Notre-Dame-de-la-Garde</div>
+              </a>
             </div>
             <div class="divLongchamp">
-              <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Logo"  class="imgActSmall"/>
-              <div class="divTextAct">Parc Longchamp</div>
+              <a href="#">
+                <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash2.jpg" alt="Logo"  class="imgActSmall"/>
+                <div class="divTextAct">Parc Longchamp</div>
+              </a>
             </div>
           </div>
+
+        </div>
+
+      </div>
+
+      <div class="divBlockActMarPhone">
+        <div class="divTextActMar" id="idTextActPhone">Activités à Marseille</div>
+    
+        <div class="divActivitesMarseillePhone">
+          <div class="divVieuxPortPhone">
+            <a href="#">
+              <img src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash3.jpg" alt="Logo" class="imgActPhone" />
+              <div class="divTextActPhone">Vieux Port</div>
+            </a>
+          </div>
+          
+          <div class="divFortPhone">
+            <a href="#"></a>
+              <img src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash2.jpg" alt="Logo" class="imgActPhone"  />
+              <div class="divTextActPhone">Fort de Pomègues</div>
+            </a>
+          </div>
+          <div class="divIlesPhone">
+            <a href="#">
+              <img src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash2.jpg" alt="Logo" class="imgActPhone" />
+              <div class="divTextActPhone">Îles du Frioul</div>
+            </a>
+          </div>
+          
+      
+          <div class="divParcNaPhone">
+            <a href="#">
+              <img src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash3.jpg" alt="Logo" class="imgActPhone" />
+              <div class="divTextActPhone">Parc National des Calanques</div>
+            </a>
+          </div>
+          
+          <div class="divDamePhone">
+            <a href="#">
+              <img src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Logo" class="imgActPhone" />
+              <div class="divTextActPhone">Notre-Dame-de-la-Garde</div>
+            </a>
+          </div>
+          <div class="divLongchampPhone">
+            <a href="#">
+              <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash2.jpg" alt="Logo"  class="imgActPhone"/>
+              <div class="divTextActPhone">Parc Longchamp</div>
+            </a>
+          </div>
+          
 
         </div>
 
