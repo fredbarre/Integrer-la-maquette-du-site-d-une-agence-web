@@ -1,842 +1,590 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /*Snippet pour les préfixes de box-sizing*/
 
 .box {
-   box-sizing: border-box; /* Opera/IE 8+ */
-   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
 
 /*font*/
 
-*{
-   font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-.phoneButton, .divPhoneButton, .divAccoMarPhone, .divBlockActMarPhone, .liAccoPhone, .liActPhone{
-   display: none;
+.phoneButton,
+.divPhoneButton {
+  display: none;
 }
 
-
-h1, .searchField, .searchButton{
-   font-weight: bold;
+h1,
+.searchField,
+.searchButton {
+  font-weight: bold;
 }
 /*  h2 titre Les plus populaires*/
-h2{/*
-   margin-top: 30px;
-   margin-left: 35px;*/
-   font-weight: bold;
-   font-size: 22px;
+h2 {
+  font-weight: bold;
+  font-size: 22px;
 }
 
 /*fin font*/
-/*
-header nav{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}*/
-.navBlockBookiAccoAct{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-/*
-nav ul{
-   display: flex;
-   list-style: none;
-}*/
 
-.ulAccoAct{
-   display: flex;
-   list-style: none;
-}
-/*
-nav li{
-   padding: 52px;
-}*/
-
-.liAcco, .liAct, .liAccoPhone, .liActPhone{
-   padding: 52px;
+.navBlockBookiAccoAct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.liAcco:hover, .liAct:hover, .liActPhone:hover, .liAccoPhone:hover{
-   color: #0065fcff;
-   border-top-style: solid;
-   padding-top: 47px;
+.ulAccoAct {
+  display: flex;
+  list-style: none;
+}
 
-}/*
-nav li:hover{
-   color: #0065fcff;
-   border-top-style: solid;
-   padding-top: 47px;
+.liAcco,
+.liAct {
+  padding: 52px;
+}
 
-   
-}*/
-/*
-nav img{
-   margin-left: 70px;
-}*/
+.liAcco:hover,
+.liAct:hover {
+  color: #0065fcff;
+  border-top-style: solid;
+  padding-top: 47px;
+}
 
-.imgBooki{
-   margin-left: 70px;
+.imgBooki {
+  margin-left: 70px;
 }
 
 /*992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
 tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 @media screen and (max-width: 768px) {
-   /*nav {
+  /*nav {
       flex-flow: column nowrap; 
    }*/
-   .navBlockBookiAccoAct{
-      flex-flow: column nowrap;
-   }
- }
-/*
- @media screen and (min-width: 768px) and (max-width: 992px) {*/
-   /*nav img, nav li{
-     width: 100%; 
-   }*//*
-   .imgBooki,.liAcco,.liAct{
-      width: 100%;
-   }
- }*/
-/*
-form{
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   
-}*/
-
-.formSearch{
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
 }
 
-.searchField{
-   border: 1px solid;
-   border-color: #F2F2F2;
-   height: 48px;
-   width: 230px;
-   
+.formSearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-
-.searchButton{
-   background-color: #0065FC;
-   border-radius: 0px 15px 15px 0px;
-   height: 50px;
-   width: 130px;
-   color: white;
-
+.searchField {
+  border: 1px solid;
+  border-color: #f2f2f2;
+  height: 48px;
+  width: 230px;
 }
 
-.locationIcon{
-   
-   align-items: center;
-   font-size: 150%;
-   align-items: center;
-   position: relative;
-   top: 15px;
-   left: 15px;
+.searchButton {
+  background-color: #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  height: 50px;
+  width: 130px;
+  color: white;
+}
+
+.locationIcon {
+  align-items: center;
+  font-size: 150%;
+  align-items: center;
+  position: relative;
+  top: 15px;
+  left: 15px;
 }
 
 .divLocation {
-   background-color: #F2F2F2;
-   border-radius: 15px 0px 0px 15px;
-   height: 50px;
-   width: 50px;
+  background-color: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 768px) {
-   .searchButton{
-      display: none; 
-   }
-
-   .phoneButton, .divPhoneButton{
-      display: flex;
-   }
-
-   .phoneSearchIcon{
-      align-items: center;
-     
-      font-size: 125%;
-      align-items: center;
-      position: relative;
-      top: 15px;
-      left: 15px;
-      color: white;
-    }
-   
-    .divPhoneButton{
-      background-color: #0065FC;
-      border-radius: 15px 15px 15px 15px;
-      height: 50px;
-      width: 50px;
-    }
-
-    .divAccoMarPhone{
-       display: flex;
-    }
- }
+}
 /*filtres*/
 
-.divFilter{
-   display: flex; 
-   justify-content: flex-start;
-   align-items: center;
-   flex-wrap: wrap;
+.divFilter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.divECO, .divFAM, .divROM, .divANI{
-   background-color: #DEEBFF;
-   /*border-radius: 15px 0px 0px 15px;*/
-   border-radius: 50%;
-   height: 50px;
-   width: 50px;
-   color: #0065FC;
-   position: relative;
-   right: 20px;
-   
+.divFilterIcon {
+  background-color: #deebff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #0065fc;
+  position: relative;
+  right: 20px;
 }
 
-.economicIcon, .famillyIcon, .romanticIcon, .petsIcon{
-   align-items: center;
-   font-size: 150%;
-   align-items: center;
-   position: relative;
-   top: 15px;
-   left: 15px;
+.iconFilter {
+  align-items: center;
+  font-size: 150%;
+  align-items: center;
+  position: relative;
+  top: 15px;
+  left: 15px;
 }
 
-.divTextEco{
-   /*margin-left: 15px;*/
-   margin-right: 30px;
-   /*border: 1px solid;
-   border-color: #F2F2F2;*/
-   /*height: 48px;
-   align-items: center;*/
-   /*width: 230px;*/
+.divTextEco {
+  margin-right: 30px;
 }
 
-.divBlockIcoText{
-   display: flex; 
-   justify-content: flex-start;
-   align-items: center;
-   /*border: 3px solid;*/
-   
-   /*border-radius: 25%;*/
-   border-top: 2px solid;
-   border-bottom: 2px solid;
-   /*border-color: #DEEBFF;*/
-   margin-left: 20px;
-   margin-right: 50px;
-
-   border-radius: 0px 30px 30px 0px;
-   border-right: 1px solid;
-   border-color: #DEEBFF;
-   
+.divBlockIcoText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin-left: 20px;
+  margin-right: 50px;
+  border-radius: 0px 30px 30px 0px;
+  border-right: 1px solid;
+  border-color: #deebff;
 }
 
-.divEmptyCircle{
-  /* background-color: #DEEBFF;*/
-   height: 50px;
-   width: 50px;
-   /*color: #0065FC;*/
-   
-   position: relative;
-   left: 20px;
-   /*border-radius: 50%;*/
-   border-radius: 0px 30px 30px 0px;
-   border-right: 8px solid;
-   border-color: #DEEBFF;
+.divTitleFilter {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.divTitleFilter{
-   display: flex; 
-   justify-content: flex-start;
-   flex-wrap: wrap;
-   margin-left: 20px;
-   margin-top: 20px;
+.titleFilter {
+  margin-right: 50px;
 }
 
-.titleFilter{
-   margin-right:50px ;
+.divNote {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.divNote{
-   display: flex; 
-   justify-content: flex-start;
-   align-items: center;
-   margin-left: 20px;
-   margin-top: 20px;
+.divI {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: #0065fc;
+  position: relative;
+  margin-right: 10px;
+  border: 3px solid;
+  border-color: #deebff;
 }
 
-.divI{
-   /*background-color: red;*/
-   /*border-radius: 15px 0px 0px 15px;*/
-   border-radius: 50%;
-   height: 25px;
-   width: 25px;
-   color: #0065FC;
-   position: relative;
-   margin-right: 10px;
-   border: 3px solid;
-   border-color: #DEEBFF;
+.infoIcon {
+  align-items: center;
+  position: relative;
+  top: 3px;
+  left: 10px;
 }
 
-.infoIcon{
-   align-items: center;
-   /*font-size: 150%;*/
-   
-   position: relative;
-   top: 3px;
-   left: 10px;
+.imgAccoMar {
+  width: 240px;
+  height: 120px;
+  border-radius: 15px 15px 0px 0px;
+  margin-left: 5px;
+  margin-top: 5px;
+  object-fit: cover;
 }
 
-.imgAccoMar{
-   width: 240px;
-   /*max-height: 120px;*/
-   /*width: 240px;*/
-   height: 120px;
-   border-radius: 15px 15px 0px 0px;
-   margin-left: 5px;
-   margin-top: 5px;
-   object-fit: cover;
+.divAccoMar {
+  width: 879px;
+  height: 622px;
+  background-color: #f2f2f2;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 35px;
 }
 
-.divAccoMar{
-   width: 879px;
-   height: 622px;
-   background-color: #F2F2F2;
-   border-radius: 15px 15px 15px 15px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin-top: 35px;
-
-   
+.divBlockImgAccoMar {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
-.divBlockImgAccoMar{
-   width: 250px;
-   height: 200px;
-   background-color: white;
-   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   border-radius: 15px 15px 15px 15px;
-   margin-left: 30px;
-   margin-bottom: 30px;
-
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+.divNameAccoMar {
+  font-weight: bold;
+  margin-left: 15px;
 }
 
-.divNameAccoMar{
-   font-weight: bold;
-   margin-left: 15px;
-   
+.divPriceAccoMar,
+.stars {
+  margin-left: 15px;
 }
 
-.divPriceAccoMar , .stars{
-   margin-left: 15px;
+.iconBlueStar {
+  color: #0065fc;
 }
 
-.iconBlueStar{
-   color: #0065FC;
+.iconEmptyStar {
+  color: #f2f2f2;
 }
 
-.iconEmptyStar{
-   color: #F2F2F2;
+.divBlockAllAcco {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.divBlockAllAcco{
-   display: flex; 
-   justify-content: flex-start;
-   flex-wrap: wrap;
-   
-}
-/*
-.divImgAcco{
-   position: relative;
-   width: 238px;
-   height: 110px;
-   overflow: hidden;
-}*/
-
-.divTextMar{
-   font-weight: bold;
-   margin-top: 35px;
-   margin-bottom: 20px;
-   margin-left: 35px;
-   font-size: 22px;
-   
-
+.divTextMar {
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  font-size: 22px;
 }
 
-.divTextMore{
-   
-   margin-bottom: 35px;
-   margin-left: 35px;
-   font-weight: bold;
+.divTextMore {
+  margin-bottom: 35px;
+  margin-left: 35px;
+  font-weight: bold;
 }
 
-.divBlockImgNameStarsPop{
-   display: flex; 
-   justify-content: flex-start;
-   border-radius: 15px 15px 15px 15px;
-   background-color: white;
-   width: 350px;
-   height: 140px;
-   /**margin-bottom: 30px;*/
-   margin-left: 35px;
-   margin-bottom: 30px;
-
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-
+.divBlockImgNameStarsPop {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  width: 350px;
+  height: 140px;
+  margin-left: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
-.imgPop{
-   width: 129px;
-   height: 130px;
-   border-radius: 15px 0px 0px 15px;
-   margin-left: 5px;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   object-fit: cover;
+.imgPop {
+  width: 129px;
+  height: 130px;
+  border-radius: 15px 0px 0px 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  object-fit: cover;
 }
 
-.divPop{
-   background-color: #F2F2F2;
-   width: 420px;
-   height: 620px;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   border-radius: 15px 15px 15px 15px;
-   margin-left: 30px;
-   margin-top: 35px;
-   
-   
+.divPop {
+  background-color: #f2f2f2;
+  width: 420px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 30px;
+  margin-top: 35px;
 }
 
-.divBlockNameStarsPop{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+.divBlockNameStarsPop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.divNamePop, .divPricePop{
-   margin-top: 15px;
-   margin-left: 15px;
+.divNamePop,
+.divPricePop {
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
-.divNamePop{
-   font-weight: bold;
-   margin-right: 20px;
+.divNamePop {
+  font-weight: bold;
+  margin-right: 20px;
 }
 
-.starsPop{
-   
-   margin-left: 15px;
-   /*margin-bottom: 15px;*/
-   margin-top: 30px;
-   
-   
+.starsPop {
+  margin-left: 15px;
+  margin-top: 30px;
 }
 
-.divTextPop{
-   margin-top: 20px;
-   margin-left: 35px;
-   margin-bottom: 10px;
-   display: flex; 
-   justify-content: space-between;
-   
-   /*
-   font-weight: bold;
-   font-size: 22px;*/
+.divTextPop {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.iconPop{
-   margin-top: 20px;
-   /*margin-left: 35px;*/
-   margin-right: 50px;
+.iconPop {
+  margin-top: 20px;
+  margin-right: 50px;
 }
 
-.divBlockMarPop{
-   display: flex; 
-   justify-content: flex-start;
-   /*justify-content: center;*/
-   flex-wrap: wrap;
-   margin-left: 20px;
+.divBlockMarPop {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 1366px) {  
-   .divBlockMarPop{
-      display: flex; 
-      justify-content: center;
-      flex-wrap: wrap;
-   }
-}
-/*
-
-.divBlockAllAccoPhone{
-   display: flex; 
-   justify-content: flex-start;
-   flex-direction: column;
-}*/
-/*
-.divBlockImgAccoMarPhone{
-   width: 335px;
-   height: 200px;
-   background-color: #ffffffff;
-   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   border-radius: 15px 15px 15px 15px;
-   margin-left: 30px;
-   margin-bottom: 30px;
-
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-}
-*/
-
-/*@media screen and (max-width: 768px) {*/
-@media screen and (max-width: 879px) {   
-  /* .liAcco{
-      display: none;
-   }*//*
-   .liAccoPhone{
-      display:flex;
-   }*/
-   /*
-   .divAccoMar{
-      display: none;
-   }*/
-/*
-   .divAccoMarPhone{
-      display: flex; 
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: center;
-      background-color: #fefefeff;
-   }*/
-
-   .divPop{
-      justify-content: center;
-      margin-left: 0px;
-   }
-   /*heber marseille fix*/
-   .divAccoMar{
-      width: 390px;
-      height: 1420px;
-      background-color: white;
-      border-radius: 15px 15px 15px 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-top: 35px;
-   
-      
-   }
-
-   .imgAccoMar{
-      width: 325px;
-      height: 110px;
-   
-      border-radius: 15px 15px 0px 0px;
-      margin-left: 5px;
-      margin-top: 5px;
-      
-   
-   }
-
-   .divBlockImgAccoMar{
-      width: 335px;
-      height: 200px;
-      background-color: #ffffffff;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 15px 15px 15px 15px;
-      margin-left: 30px;
-      margin-bottom: 10px;
-   
-      box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-   }
-   
-   .divBlockMarPop{
-      flex-direction: column-reverse;
-      align-items: center;
-   }
-   /*fix*/
-}
-/*
-.imgAccoMarPhone{
-   width: 325px;
-   height: 110px;
-
-   border-radius: 15px 15px 0px 0px;
-   margin-left: 5px;
-   margin-top: 5px;
-
-}*/
-
-.divActivitesMarseille{
-   display: flex; 
-   justify-content: flex-start;
-   flex-wrap: wrap;
-}
-      
-
-
-.imgActLarge{
-   width: 300px;
-   height: 400px;
-   border-radius: 15px 15px 0px 0px;
-   object-fit: cover;
+@media screen and (max-width: 1366px) {
+  .divBlockMarPop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
-.imgActSmall{
-   width: 300px;
-   height: 143px;
-   border-radius: 15px 15px 0px 0px;
-   object-fit: cover;
+@media screen and (max-width: 879px) {
+  .divPop {
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .divAccoMar {
+    width: 390px;
+    height: 1420px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+
+  .imgAccoMar {
+    width: 325px;
+    height: 110px;
+
+    border-radius: 15px 15px 0px 0px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .divBlockImgAccoMar {
+    width: 335px;
+    height: 200px;
+    background-color: #ffffffff;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+  }
+
+  .divBlockMarPop {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
-.divVieuxPort, .divIles, .divParcNa, .divLongchamp, .divFort, .divDame ,.divLongchamp{
-   display: flex; 
-   justify-content: flex-start;
-   flex-direction: column;
-   margin-left: 20px;
-   border-style: solid;
-   border-width: 1px;
-   border-color: white;/*test*/
-   border-radius: 15px 15px 15px 15px;
-
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-}
-/*modif*/
-.divBigAct, .divSmallAct{
-   display: flex; 
-   justify-content: flex-start;
-   flex-direction: column;
-   margin-left: 20px;
-   border-style: solid;
-   border-width: 1px;
-   border-color: white;/*test*/
-   border-radius: 15px 15px 15px 15px;
-
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+.divActivitesMarseille {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-
-.divBigAct{
-   height: 455px;
-}
-.divSmallAct{
-   height: 200px;
-}
-
-
-/*modif fin*/
-.divVieuxPort, .divParcNa{
-   height: 455px;
+.imgActLarge {
+  width: 300px;
+  height: 400px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
-.divFort, .divIles, .divDame, .divLongchamp{
-   height: 200px;
+.imgActSmall {
+  width: 300px;
+  height: 143px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
-.divTextAct{
-   margin-top: 20px;
-   margin-left: 15px;
-   font-weight: bold;
-   font-size: 15px;
+.divBigAct,
+.divSmallAct {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 15px 15px 15px 15px;
+
+  box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
 }
 
-.divBlockDameLongchamp, .divBlockFortIles{
-   display: flex; 
-   justify-content: space-between;
-   flex-direction: column;
+.divBigAct {
+  height: 455px;
+}
+.divSmallAct {
+  height: 200px;
 }
 
-.divTextActMar{
-   margin-top: 45px;
-   margin-bottom: 20px;
-   margin-left: 20px;
-   font-weight: bold;
-   font-size: 22px;
+.divTextAct {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.footer{
-   display: flex; 
-   justify-content: flex-start;
-   flex-wrap: wrap;
-   background-color: #F2F2F2;
-   /*margin-bottom: 50px;*/
-   /*height: 200px;*/
-   padding-bottom: 50px;
+.divBlockDameLongchamp,
+.divBlockFortIles {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.divFooterAbout, .divFooterAcco, .divFooterAssist{
-   width: 400px;
-   margin-left: 50px;
+.divTextActMar {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
-.divTextFooter{
-   margin-bottom: 15px;
-}
-/*
-.divBlockActMar{
-   display: flex; 
-   justify-content: flex-start;
-   flex-direction: column;
-   
-}*/
-
-@media screen and (max-width: 768px){
-   .divFooterAbout, .divFooterAcco, .divFooterAssist{
-      margin-left: 30px;
-   }
-   /*
-   .divBlockActMar{
-      display: none;
-   }*/
-   .divBlockActMarPhone{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      
-   }
-
-   /*fix*/
-   .divBlockActMar{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /*width: 400px;*/
-
-   }
-
-   .divActivitesMarseille{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .divBigAct{
-      height: 190px;
-   }
-
-   .divBigAct, .divSmallAct{
-      margin-top: 20px;
-      width: 336px;
-   }
-  
-   .imgActLarge,.imgActSmall{
-      height: 135px;
-      width: 336px;
-      /*width: 300px;
-      height: 143px;*/
-      border-radius: 15px 15px 0px 0px;
-   }
-
-   .divBlockActMar{
-      margin-bottom: 1px;
-   }
-
-   .divTextActMar{
-      margin-top: 45px;
-      margin-bottom: 20px;
-      /*margin-left: 20px;*/
-      margin-right: 100px;
-      font-weight: bold;
-      font-size: 22px;
-   }
-
-
-   /*fin fix*/
-
-/*
-   .liAct{
-      display: none;
-   }*/
-/*
-   .liActPhone{
-      display:flex;
-   }*/
-
-   .liAct:hover, .liAcco:hover{
-      color: #0065fcff;
-      border-top-style: none;
-      border-bottom-style: solid;
-      padding-top: 47px;
-   
-   }
-
-
-}
-/*
-.imgActPhone{
-   height: 135px;
-   width: 336px;
-   border-radius: 15px 15px 0px 0px;
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
 }
 
-.divVieuxPortPhone, .divFortPhone, .divIlesPhone, .divParcNaPhone, .divDamePhone, .divLongchampPhone{
-   height: 190px;
-   border-radius: 15px 15px 15px 15px;
-   box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-   margin-top: 20px;
-   
-}/*
-.divLongchampPhone{
-   margin-bottom: 50px;
-}*/
-/*
-.divTextActPhone{
-   margin-top: 15px;
-   margin-left: 15px;
-   font-weight: bold;
-   font-size: 15px;
+.divFooterAbout,
+.divFooterAcco,
+.divFooterAssist {
+  width: 400px;
+  margin-left: 50px;
 }
 
-.divActivitesMarseillePhone{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}*/
-
-a:link, a:visited{
-   color: black;
-   background-color: transparent;
-   text-decoration: none;
-}
- 
-.divBlockSearch{
-   margin-left: 20px;
+.divTextFooter {
+  margin-bottom: 15px;
 }
 
-.divTextAccoDream, .divTextTownNat{
-   margin-left: 20px;
-   margin-bottom: 15px;
+@media screen and (max-width: 768px) {
+  .navBlockBookiAccoAct {
+    flex-flow: column nowrap;
+  }
+
+  .searchButton {
+    display: none;
+  }
+
+  .phoneButton,
+  .divPhoneButton {
+    display: flex;
+  }
+
+  .phoneSearchIcon {
+    align-items: center;
+    font-size: 125%;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    color: white;
+  }
+
+  .divPhoneButton {
+    background-color: #0065fc;
+    border-radius: 15px 15px 15px 15px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .divFooterAbout,
+  .divFooterAcco,
+  .divFooterAssist {
+    margin-left: 30px;
+  }
+
+  .divBlockActMar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divActivitesMarseille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divBigAct {
+    height: 190px;
+  }
+
+  .divBigAct,
+  .divSmallAct {
+    margin-top: 20px;
+    width: 336px;
+  }
+
+  .imgActLarge,
+  .imgActSmall {
+    height: 135px;
+    width: 336px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .divBlockActMar {
+    margin-bottom: 1px;
+  }
+
+  .divTextActMar {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .liAct:hover,
+  .liAcco:hover {
+    color: #0065fcff;
+    border-top-style: none;
+    border-bottom-style: solid;
+    padding-top: 47px;
+  }
 }
 
-.divTextAccoDream{
-   font-weight: bold;
-   font-size: 150%;
+a:link,
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.divBlockActMar{
-   margin-bottom: 50px;
+.divBlockSearch {
+  margin-left: 20px;
+}
+
+.divTextAccoDream,
+.divTextTownNat {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.divTextAccoDream {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.divBlockActMar {
+  margin-bottom: 50px;
 }
