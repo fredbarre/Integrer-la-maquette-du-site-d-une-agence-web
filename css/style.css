@@ -250,11 +250,11 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 }
 
 .divTextMar {
-  font-weight: bold;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  margin-left: 35px;
-  font-size: 22px;
+  /**font-weight: bold;*/
+  margin-top: 15px;
+  /*margin-bottom: 20px;*/
+  margin-left: 35px; /*
+  font-size: 22px;*/
 }
 
 .divTextMore {
@@ -451,7 +451,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 .divTextActMar {
   margin-top: 45px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   margin-left: 20px;
   font-weight: bold;
   font-size: 22px;
@@ -548,7 +548,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 
   .divTextActMar {
     margin-top: 45px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     margin-right: 100px;
     font-weight: bold;
     font-size: 22px;
@@ -582,7 +582,7 @@ a:visited {
 
 .divTextAccoDream {
   font-weight: bold;
-  font-size: 150%;
+  /*font-size: 150%;*/
 }
 
 .divBlockActMar {
