@@ -14,6 +14,30 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+/**test button**/
+.buttonFilter {
+  /*
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;*/
+  /*margin-left: 20px;
+  margin-right: 50px;*/
+  /*margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px 30px 30px 0px;
+  border-right: 1px solid;
+  border-color: #deebff;*/
+  /*color: white;*/
+  background-color: white; /*
+  border-left: none;*/
+  /*height: 100%;
+  width: 100%;*/
+  border: none;
+}
 
 .phoneButton,
 .divPhoneButton {
@@ -42,6 +66,7 @@ h2 {
 .ulAccoAct {
   display: flex;
   list-style: none;
+  padding-left: 0px;
 }
 
 .liAcco,
@@ -57,8 +82,11 @@ h2 {
 }
 
 .imgBooki {
-  margin-left: 70px;
-  margin-right: 70px;
+  /*margin-left: 70px;
+  margin-right: 70px;*/
+  padding-left: 70px;
+  /*max-width: 33%;
+  height: 33%;*/
 }
 
 /*992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
@@ -89,6 +117,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   height: 50px;
   width: 130px;
   color: white;
+  /*border-color: white;*/
 }
 
 .locationIcon {
@@ -114,8 +143,8 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 20px;
-  margin-left: 20px;
+  /*margin-right: 20px;
+  margin-left: 20px;*/
 }
 
 .divFilterIcon {
@@ -129,12 +158,12 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 }
 
 .iconFilter {
-  align-items: center;
-  font-size: 150%;
+  /*align-items: center;*/
+  font-size: 125%;
   align-items: center;
   position: relative;
   top: 15px;
-  left: 15px;
+  /*left: 30px;*/
 }
 
 .divTextEco {
@@ -149,8 +178,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   align-items: center;
   border-top: 2px solid;
   border-bottom: 2px solid;
-  /*margin-left: 20px;
-  margin-right: 50px;*/
+
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 5px;
@@ -158,6 +186,9 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   border-radius: 0px 30px 30px 0px;
   border-right: 1px solid;
   border-color: #deebff;
+
+  /*margin-left: 20px;
+  margin-right: 50px;*/
 }
 
 .divTitleFilter {
@@ -337,6 +368,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   /*flex-grow: 1;*/
   border-radius: 15px 15px 15px 15px;
   margin-left: 30px;
@@ -344,6 +376,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   /*margin-top: 35px;*/
   margin-top: 15px;
   margin-bottom: 15px;
+  /*padding-right: 65px;*/
 }
 
 .divBlockNameStarsPop {
@@ -391,6 +424,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  padding-left: 70px;
 }
 /**
 .divEmptyBetweenNightStars {
@@ -400,7 +434,7 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 .divBlockMarPop {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
@@ -417,6 +451,8 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 @media screen and (max-width: 933px) {
   .divPop {
     height: 578px;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
     /*justify-content: center;*/
     /*margin-left: 0px;*/
   }
@@ -478,10 +514,16 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 
 .divActivitesMarseille {
   display: flex;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
+  justify-content: center;
   flex-wrap: wrap;
   /*margin-left: 3px;
   margin-right: 3px;*/
+
+  /*width: 1400px;*/
+  /*block-size: fit-content;*/
+  /*width: fit-content;
+  block-size: fit-content;*/
 }
 
 .imgActLarge {
@@ -546,6 +588,18 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   margin-right: 20px;
   font-weight: bold;
   font-size: 22px;
+
+  display: flex;
+  /*justify-content: flex-start;*/
+
+  /*padding-right: 1100px;*/
+}
+
+.divBlockActMarPos {
+  /*display: flex;*/
+  /*display: inline-block;*/
+  /*justify-content: flex-start;
+  flex-direction: column;*/
 }
 
 .footer {
@@ -573,8 +627,14 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
 }
 
 @media screen and (max-width: 768px) {
+  .ulAccoAct {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .navBlockBookiAccoAct {
     flex-flow: column nowrap;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .searchButton {
@@ -611,12 +671,16 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*width: fit-content;
+    block-size: fit-content;*/
   }
 
   .divActivitesMarseille {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*width: fit-content;
+    block-size: fit-content;*/
   }
 
   .divBigAct {
@@ -659,6 +723,12 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .divActivitesMarseille {
+    justify-content: flex-start;
+  }
+}
+
 a:link,
 a:visited {
   color: black;
@@ -668,12 +738,18 @@ a:visited {
 
 .divBlockSearch {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .divTextAccoDream,
 .divTextTownNat {
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.divTextTownNat {
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .divTextAccoDream {
@@ -684,4 +760,7 @@ a:visited {
 .divBlockActMar {
   /*margin-bottom: 50px;*/
   padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
