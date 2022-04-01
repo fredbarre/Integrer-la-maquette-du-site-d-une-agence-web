@@ -445,6 +445,8 @@ tout ce qui est en dessous de 768 pour les téléphones portables*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
