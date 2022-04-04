@@ -14,13 +14,14 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-/**test button**/
+
 .filtreBouton {
   background-color: white;
-
+  cursor: pointer;
   border: none;
 }
 
+/*cacher les Parties exclusives pour Phone (bouton de recherche)*/
 .rechercPhoneBouton,
 .rechercPhoneBoutonDiv {
   display: none;
@@ -37,8 +38,16 @@ h2 {
   font-size: 22px;
 }
 
+a:link,
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /*fin font*/
 
+/*Barre de navigation*/
 .bookiHebActBlockNav {
   display: flex;
   justify-content: space-between;
@@ -66,7 +75,27 @@ h2 {
 .bookiImg {
   padding-left: 70px;
 }
+/*fin de la barre de navigation*/
 
+/*zone de texte avant recherche*/
+
+.heberReveTextDiv,
+.villeNatTextDiv {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.villeNatTextDiv {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.heberReveTextDiv {
+  font-weight: bold;
+}
+/*fin zone de texte*/
+
+/*zone de recherche*/
 .rechercForm {
   display: flex;
   justify-content: flex-start;
@@ -86,6 +115,12 @@ h2 {
   height: 50px;
   width: 130px;
   color: white;
+  border: none;
+}
+
+.rechercBlockDiv {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .locationIcon {
@@ -130,7 +165,7 @@ h2 {
   top: 15px;
 }
 
-.ecoTextDiv {
+.filtreNomTextDiv {
   padding-right: 30px;
 }
 
@@ -147,7 +182,7 @@ h2 {
   margin-bottom: 5px;
   border-radius: 0px 30px 30px 0px;
   border-right: 1px solid;
-  border-color: #deebff;
+  border-color: #f2f2f2;
 }
 
 .filtreTitreDiv {
@@ -163,6 +198,9 @@ h2 {
   margin-left: 20px;
 }
 
+/*fin filtres*/
+
+/*Note */
 .noteDiv {
   display: flex;
   justify-content: flex-start;
@@ -182,7 +220,7 @@ h2 {
   margin-right: 10px;
   margin-left: 10px;
   border: 3px solid;
-  border-color: #deebff;
+  border-color: #f2f2f2;
 }
 
 .infoIcon {
@@ -192,6 +230,9 @@ h2 {
   left: 10px;
 }
 
+/*zone note fini*/
+
+/*hebergements a marseille*/
 .heberMarImg {
   width: 240px;
   height: 120px;
@@ -275,7 +316,9 @@ h2 {
   margin-right: 35px;
   font-weight: bold;
 }
+/*fin zone hbergements*/
 
+/*zone les plus populaires*/
 .popEtoileNameImgBlockDiv {
   display: flex;
   justify-content: flex-start;
@@ -358,7 +401,9 @@ h2 {
   margin-left: 20px;
   padding-left: 70px;
 }
+/*bloc des plus populaires fin*/
 
+/*bloc Hebergements a marseille et Les plus popualaires*/
 .marPopBlockDiv {
   display: flex;
   justify-content: center;
@@ -368,75 +413,7 @@ h2 {
   gap: 30px;
 }
 
-@media screen and (max-width: 1366px) {
-  .marPopBlockDiv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 933px) {
-  .popDiv {
-    height: 578px;
-    width: 100%;
-    border-radius: 0px 0px 0px 0px;
-  }
-
-  .heberMarDiv {
-    width: 390px;
-    height: auto;
-    background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .heberMarImg {
-    width: 325px;
-    height: 110px;
-
-    border-radius: 15px 15px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-
-  .heberMarImgBlockDiv {
-    width: 335px;
-    height: 200px;
-    background-color: #ffffffff;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px 15px 15px 15px;
-    margin-bottom: 10px;
-
-    box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
-  }
-
-  .marPlusTextDiv {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
-    font-weight: bold;
-  }
-
-  .marPopBlockDiv {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .popEtoileNameImgBlockDiv {
-    margin-bottom: 7px;
-    margin-top: 7px;
-  }
-}
-
+/*activités a Marseille*/
 .activitesMarseilleDiv {
   display: flex;
   justify-content: center;
@@ -506,10 +483,19 @@ h2 {
   display: flex;
 }
 
+.actMarBlockDiv {
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*fin du bloc activités a marseille*/
 /*
 .actMarBlockDivPos {
 }*/
 
+/*footer*/
 .footer {
   display: flex;
   justify-content: center;
@@ -536,7 +522,76 @@ h2 {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+/*fin du footer*/
 
+/*passage du bloc hebergement a marseille et les plus populaires en 2 lignes*/
+@media screen and (max-width: 1366px) {
+  .marPopBlockDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/*le bloc hebergement a marseille ne tient plus sur 1 ligne et passage au rendu phone*/
+@media screen and (max-width: 933px) {
+  .popDiv {
+    height: 578px;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .heberMarDiv {
+    width: 390px;
+    height: auto;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .heberMarImg {
+    width: 325px;
+    height: 110px;
+
+    border-radius: 15px 15px 0px 0px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .heberMarImgBlockDiv {
+    width: 335px;
+    height: 200px;
+    background-color: #ffffffff;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 10px;
+
+    box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+  }
+
+  .marPlusTextDiv {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-weight: bold;
+  }
+
+  .marPopBlockDiv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .popEtoileNameImgBlockDiv {
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+}
+
+/*phone*/
 @media screen and (max-width: 768px) {
   .hebActUl {
     margin-top: 0px;
@@ -626,43 +681,9 @@ h2 {
     padding-top: 47px;
   }
 }
-
+/*arret du centrage du block activités marseille pour les écran un peu plus petit mais toujours desktop*/
 @media screen and (max-width: 1400px) {
   .activitesMarseilleDiv {
     justify-content: flex-start;
   }
-}
-
-a:link,
-a:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.rechercBlockDiv {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.heberReveTextDiv,
-.villeNatTextDiv {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.villeNatTextDiv {
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.heberReveTextDiv {
-  font-weight: bold;
-}
-
-.actMarBlockDiv {
-  padding-bottom: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

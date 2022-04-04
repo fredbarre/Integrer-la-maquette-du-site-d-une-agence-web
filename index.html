@@ -15,19 +15,25 @@
 
   <body>
     <header>
+      <!-- Barre de navigation -->
+      
       <nav class="bookiHebActBlockNav">
         <img src="./images/logo/Booki.png" alt="Logo" class="bookiImg" />
         <ul class="hebActUl">
-          <a href="#idTextMar"><li class="hebLi">Hébergements</li></a>
-          <a href="#idTextAct"><li class="actLi">Activités</li></a>
+          <li class="hebLi"><a href="#idTextMar">Hébergements</a></li>
+          <li class="actLi"><a href="#idTextAct">Activités</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Zone de texte avant recherche -->
 
     <div class="heberReveTextDiv">
       <h1>Trouver votre hebergement pour des vacances de rêve</h1>
     </div>
     <div class="villeNatTextDiv">En plein centre ville ou en pleine nature</div>
+
+    <!-- Zone de recherche -->
     <div class="rechercBlockDiv">
       <form action="#" class="rechercForm">
         <div class="locationDiv">
@@ -45,50 +51,51 @@
         </div>
       </form>
     </div>
+    <!-- Filtres -->
     <div class="filtreTitreDiv">
       <h2 class="filtreTitre">Filtres</h2>
       <div class="filtreDiv">
         <button class="filtreBouton">
-          <div class="filtreIcoTextBlockDiv">
-          <!--test button-->
-          <div class="filtreDivIcon">
-            <i class="fa-solid fa-money-bill-wave economicIcon filtreIcon"></i>
-          </div>
-          
-          
-          
-          <div class="ecoTextDiv">Economique</div>
-          
-        </div>
+          <span class="filtreIcoTextBlockDiv">
+            <span class="filtreDivIcon">
+              <i
+                class="fa-solid fa-money-bill-wave economicIcon filtreIcon"
+              ></i>
+            </span>
+
+            <span class="filtreNomTextDiv">Economique</span>
+          </span>
+        </button>
+
+        <button class="filtreBouton">
+          <span class="filtreIcoTextBlockDiv">
+            <span class="filtreDivIcon">
+              <i class="fa-solid fa-person famillyIcon filtreIcon"></i>
+            </span>
+            <span class="filtreNomTextDiv">Familial</span>
+          </span>
         </button>
         <button class="filtreBouton">
-        <div class="filtreIcoTextBlockDiv">
-          <div class="filtreDivIcon">
-            <i class="fa-solid fa-person famillyIcon filtreIcon"></i>
-          </div>
-          <div class="ecoTextDiv">Familial</div>
-          
-        </div>
+          <span class="filtreIcoTextBlockDiv">
+            <span class="filtreDivIcon">
+              <i class="fa-solid fa-heart romanticIcon filtreIcon"></i>
+            </span>
+            <span class="filtreNomTextDiv">Romantique</span>
+          </span>
         </button>
         <button class="filtreBouton">
-        <div class="filtreIcoTextBlockDiv">
-          <div class="filtreDivIcon">
-            <i class="fa-solid fa-heart romanticIcon filtreIcon"></i>
-          </div>
-          <div class="ecoTextDiv">Romantique</div>
-          
-        </div>
-        </button>
-        <button class="filtreBouton">
-        <div class="filtreIcoTextBlockDiv">
-          <div class="filtreDivIcon"><i class="fa-solid fa-dog petsIcon filtreIcon"></i></div>
-          <div class="ecoTextDiv">Animaux autorisés</div>
-          
-        </div>
+          <span class="filtreIcoTextBlockDiv">
+            <span class="filtreDivIcon"
+              ><i class="fa-solid fa-dog petsIcon filtreIcon"></i
+            ></span>
+            <span class="filtreNomTextDiv">Animaux autorisés</span>
+          </span>
         </button>
       </div>
     </div>
-
+    
+    <!--Note-->
+    
     <div class="noteDiv">
       <div class="noteIconDiv"><i class="fa-solid fa-info infoIcon"></i></div>
       Plus de 500 logements sont disponibles dans cette ville
@@ -97,6 +104,9 @@
     <main>
       <section>
         <div class="marPopBlockDiv">
+
+          <!--Hebergements a marseille -->
+
           <div class="heberMarDiv">
             <div class="marTextDiv" id="idTextMar">
               <h2>Hébergements à Marseille</h2>
@@ -222,6 +232,7 @@
             </a>
           </div>
 
+          <!--Bloc des plus populaires-->
           <div class="popDiv">
             <div class="popTextDiv">
               <h2>Les plus populaires</h2>
@@ -304,106 +315,114 @@
         </div>
       </section>
       <section>
+
+        <!--Activités a Marseille-->
         <div class="actMarBlockDiv">
           <div class="actMarBlockDivPos">
-          <div class="actMarTextDiv" id="idTextAct"><h2>Activités à Marseille</h2></div>
-
-          <div class="activitesMarseilleDiv">
-            <div class="actGranDiv">
-              <a href="#">
-                <img
-                  src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="Logo"
-                  class="actGranImg"
-                />
-                <div class="actTextDiv">Vieux Port</div>
-              </a>
-            </div>
-            <div class="FortIlesBlockDiv">
-              <div class="actPetitDiv">
-                <a href="#">
-                  <img
-                    src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                    alt="Logo"
-                    class="actPetitImg"
-                  />
-                  <div class="actTextDiv">Fort de Pomègues</div>
-                </a>
-              </div>
-              <div class="actPetitDiv">
-                <a href="#">
-                  <img
-                    src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                    alt="Logo"
-                    class="actPetitImg"
-                  />
-                  <div class="actTextDiv">Îles du Frioul</div>
-                </a>
-              </div>
+            <div class="actMarTextDiv" id="idTextAct">
+              <h2>Activités à Marseille</h2>
             </div>
 
-            <div class="actGranDiv">
-              <a href="#">
-                <img
-                  src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="Logo"
-                  class="actGranImg"
-                />
-                <div class="actTextDiv">Parc National des Calanques</div>
-              </a>
-            </div>
-            <div class="DameLongchampBlockDiv">
-              <div class="actPetitDiv">
+            <div class="activitesMarseilleDiv">
+              <div class="actGranDiv">
                 <a href="#">
                   <img
-                    src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                     alt="Logo"
-                    class="actPetitImg"
+                    class="actGranImg"
                   />
-                  <div class="actTextDiv">Notre-Dame-de-la-Garde</div>
+                  <div class="actTextDiv">Vieux Port</div>
                 </a>
               </div>
-              <div class="actPetitDiv">
+              <div class="FortIlesBlockDiv">
+                <div class="actPetitDiv">
+                  <a href="#">
+                    <img
+                      src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                      alt="Logo"
+                      class="actPetitImg"
+                    />
+                    <div class="actTextDiv">Fort de Pomègues</div>
+                  </a>
+                </div>
+                <div class="actPetitDiv">
+                  <a href="#">
+                    <img
+                      src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                      alt="Logo"
+                      class="actPetitImg"
+                    />
+                    <div class="actTextDiv">Îles du Frioul</div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="actGranDiv">
                 <a href="#">
                   <img
-                    src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                     alt="Logo"
-                    class="actPetitImg"
+                    class="actGranImg"
                   />
-                  <div class="actTextDiv">Parc Longchamp</div>
+                  <div class="actTextDiv">Parc National des Calanques</div>
                 </a>
               </div>
+              <div class="DameLongchampBlockDiv">
+                <div class="actPetitDiv">
+                  <a href="#">
+                    <img
+                      src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                      alt="Logo"
+                      class="actPetitImg"
+                    />
+                    <div class="actTextDiv">Notre-Dame-de-la-Garde</div>
+                  </a>
+                </div>
+                <div class="actPetitDiv">
+                  <a href="#">
+                    <img
+                      src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                      alt="Logo"
+                      class="actPetitImg"
+                    />
+                    <div class="actTextDiv">Parc Longchamp</div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
     </main>
-
+    
+    <!--footer-->
+    
     <footer class="footer">
       <div class="footerContainerDiv">
-      <div class="footerDiv">
-        <h2>A propos</h2>
-        <a href="#"><div class="footerTextDiv">Fonctionnement du site</div></a>
-        <a href="#"
-          ><div class="footerTextDiv">Conditions Générales de vente</div></a
-        >
-        <a href="#"
-          ><div class="footerTextDiv">Données et confidentialité</div></a
-        >
-      </div>
+        <div class="footerDiv">
+          <h2>A propos</h2>
+          <a href="#"
+            ><div class="footerTextDiv">Fonctionnement du site</div></a
+          >
+          <a href="#"
+            ><div class="footerTextDiv">Conditions Générales de vente</div></a
+          >
+          <a href="#"
+            ><div class="footerTextDiv">Données et confidentialité</div></a
+          >
+        </div>
 
-      <div class="footerDiv">
-        <h2>Nos hébergements</h2>
-        <a href="#"><div class="footerTextDiv">Chartre qualité</div></a>
-        <a href="#"><div class="footerTextDiv">Soumettre votre hôtel</div></a>
-      </div>
+        <div class="footerDiv">
+          <h2>Nos hébergements</h2>
+          <a href="#"><div class="footerTextDiv">Chartre qualité</div></a>
+          <a href="#"><div class="footerTextDiv">Soumettre votre hôtel</div></a>
+        </div>
 
-      <div class="footerDiv">
-        <h2>Assistance</h2>
-        <a href="#"><div class="footerTextDiv">Centre d'aide</div></a>
-        <a href="#"><div class="footerTextDiv">Nous contacter</div></a>
-      </div>
+        <div class="footerDiv">
+          <h2>Assistance</h2>
+          <a href="#"><div class="footerTextDiv">Centre d'aide</div></a>
+          <a href="#"><div class="footerTextDiv">Nous contacter</div></a>
+        </div>
       </div>
     </footer>
   </body>
